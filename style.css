@@ -17,6 +17,18 @@ p, a {
   font-size: 0.8em;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 header {
   display: flex;
   background-color: #779882;
@@ -43,7 +55,7 @@ header nav ul li {
   color: #fff;
   font-size: 1.2em;
 }
-header #bars {
+header .bars {
   padding: 0 1em;
   color: #000;
   background-color: #779882;
@@ -72,50 +84,50 @@ header .logo {
 .hero .hero-text {
   background-color: rgba(119, 152, 130, 0.5019607843);
   width: 100%;
-  margin-top: 11em;
+  margin-top: 12em;
   position: absolute;
   background-position: left;
   text-align: center;
   color: #fff;
 }
 
-.afsnit_1 {
+#afsnit_1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f3f4ef;
 }
-.afsnit_1 .afsnit {
+#afsnit_1 .afsnit_1 {
   text-align: left;
   padding: 0 1.2em;
   margin-bottom: 1em;
 }
-.afsnit_1 .afsnit h2 {
+#afsnit_1 .afsnit_1 h2 {
   font-size: 1.6em;
 }
-.afsnit_1 .contact {
+#afsnit_1 .contact {
   margin: 1em;
   padding: 0 1.3em 1.3em 1.3em;
   border-radius: 10px;
   background-color: #425348;
 }
-.afsnit_1 .contact h3 {
+#afsnit_1 .contact h3 {
   color: #fff;
   font-size: 1em;
 }
-.afsnit_1 .contact input {
+#afsnit_1 .contact input {
   margin-bottom: 1em;
   border-radius: 5px;
   padding: 0.6em;
   border: none;
 }
-.afsnit_1 .contact ::-moz-placeholder {
+#afsnit_1 .contact ::-moz-placeholder {
   color: black;
 }
-.afsnit_1 .contact ::placeholder {
+#afsnit_1 .contact ::placeholder {
   color: black;
 }
-.afsnit_1 .contact a {
+#afsnit_1 .contact a {
   background-color: #779882;
   color: #fff;
   border-radius: 6px;
@@ -137,13 +149,14 @@ header .logo {
 .afsnit_2 a {
   background-color: #779882;
   color: #fff;
-  padding: 1.5vw;
+  padding: 1.5em;
   border-radius: 10px;
   display: block;
   margin: 2em auto 2em auto;
   width: 50%;
   text-align: center;
   text-decoration: none;
+  font-size: 0.9em;
 }
 
 footer {
@@ -178,7 +191,7 @@ footer a {
 }
 /* Desktop-format */
 @media screen and (min-width: 800px) {
-  #bars {
+  header .bars {
     display: none;
   }
   header ul {

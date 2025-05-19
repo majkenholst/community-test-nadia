@@ -19,7 +19,7 @@
                 <li>3</li>
             </ul>
         </nav>
-        <button id="bars">
+        <button class="bars" aria-label="Menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
     </header>
@@ -35,7 +35,7 @@
      <!-- MAIN -->
     
      <main>
-        <section>
+        <section id="afsnit_1">
             <div class="afsnit_1">
                 <h2>Bliv en del af fællesskabet i dag!</h2>
                 <p>Vores fokus er at bringe mennesker sammen og skabe et
@@ -56,14 +56,14 @@
        
             <div class="contact">
                 <h3>Tilmeld dig her!</h3>
-                <form action="#">
-                    <label for="name" aria-label="Navn"></label>
+                <form action="#" aria-label="Kontaktformular">
+                    <label for="name" aria-label="Navn" class="sr-only">Navn</label>
                     <input type="text" name="navn" id="name" placeholder="Navn">
 
-                    <label for="username" aria-label="Brugernavn"></label>
+                    <label for="username" aria-label="Brugernavn" class="sr-only">Brugernavn</label>
                     <input type="text" name="username" id="username" placeholder="Brugernavn">
 
-                    <label for="mail" aria-label="E-mail"></label>
+                    <label for="mail" aria-label="E-mail" class="sr-only">E-Mail</label>
                     <input type="email" name="e-mail" id="e-mail" placeholder="E-mail">
 
                     <a href="#">Tilmeld</a>
