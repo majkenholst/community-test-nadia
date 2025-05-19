@@ -1,0 +1,187 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+p, a {
+  font-size: 0.8em;
+}
+
+header {
+  display: flex;
+  background-color: #779882;
+  height: 6vh;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 2em;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: 1em;
+}
+header nav ul li {
+  padding: 0 1em;
+  color: #fff;
+  font-size: 1.2em;
+}
+header #bars {
+  padding: 0 1em;
+  color: #000;
+  background-color: #779882;
+  color: #000;
+  max-width: 30vw;
+  text-decoration: none;
+  border-radius: 8px;
+  display: block;
+  border: none;
+  font-size: 1.4em;
+  outline: none;
+  box-shadow: none;
+}
+header .logo {
+  font-size: 1.5em;
+  color: black;
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+.hero {
+  background-image: url(./banner-billede.jpg);
+  background-size: cover;
+  height: 40vh;
+}
+.hero .hero-text {
+  background-color: rgba(119, 152, 130, 0.5019607843);
+  width: 100%;
+  margin-top: 11em;
+  position: absolute;
+  background-position: left;
+  text-align: center;
+  color: #fff;
+}
+
+.afsnit_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f4ef;
+}
+.afsnit_1 .afsnit {
+  text-align: left;
+  padding: 0 1.2em;
+  margin-bottom: 1em;
+}
+.afsnit_1 .afsnit h2 {
+  font-size: 1.6em;
+}
+.afsnit_1 .contact {
+  margin: 1em;
+  padding: 0 1.3em 1.3em 1.3em;
+  border-radius: 10px;
+  background-color: #425348;
+}
+.afsnit_1 .contact h3 {
+  color: #fff;
+  font-size: 1em;
+}
+.afsnit_1 .contact input {
+  margin-bottom: 1em;
+  border-radius: 5px;
+  padding: 0.6em;
+  border: none;
+}
+.afsnit_1 .contact ::-moz-placeholder {
+  color: black;
+}
+.afsnit_1 .contact ::placeholder {
+  color: black;
+}
+.afsnit_1 .contact a {
+  background-color: #779882;
+  color: #fff;
+  border-radius: 6px;
+  display: block;
+  margin: 0.3em auto;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.afsnit_2 {
+  padding: 0 6em;
+}
+.afsnit_2 h2 {
+  padding-top: 1em;
+  text-align: center;
+}
+.afsnit_2 a {
+  background-color: #779882;
+  color: #fff;
+  padding: 1.5vw;
+  border-radius: 10px;
+  display: block;
+  margin: 2em auto 2em auto;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer {
+  height: 10vh;
+  background-color: #425348;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1em;
+  margin: 0 3em 0 1em;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Mobil-format */
+@media screen and (max-width: 799px) {
+  header > nav {
+    display: none; /* skjuler nav-elementet i mobil-versionen */
+  }
+  .show {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: aqua;
+    width: 100%;
+  }
+}
+/* Desktop-format */
+@media screen and (min-width: 800px) {
+  #bars {
+    display: none;
+  }
+  header ul {
+    display: flex;
+  }
+}/*# sourceMappingURL=style.css.map */

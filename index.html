@@ -4,31 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4955c81697.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Forside</title>
 </head>
 <body>
 
     <header>
+        <a href="#"><i class="fa-regular fa-circle logo"></i></a>
         <nav>
-            <a href="#"><i class="fa-regular fa-circle logo"></i></a>
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
         </nav>
+        <button id="bars">
+                <i class="fa-solid fa-bars"></i>
+            </button>
     </header>
 
     <!-- HERO -->
      <section class="hero">
-        <h1>Communitybaseret læring og fællesskab</h1>
-        <p>Start din rejse mod et større netværk</p>
+        <div class="hero-text">
+            <h1>Communitybaseret læring og fællesskab</h1>
+            <p>Start din rejse mod et større netværk</p>
+        </div>
      </section>
+
+     <!-- MAIN -->
     
      <main>
         <section>
-            <div class="afsnit 1">
+            <div class="afsnit_1">
                 <h2>Bliv en del af fællesskabet i dag!</h2>
                 <p>Vores fokus er at bringe mennesker sammen og skabe et
                     netværk af ligesindede, som kan dele deres erfaringer og
@@ -63,7 +71,7 @@
             </div>
         </section>
 
-        <section class="afsnit 2">
+        <section class="afsnit_2">
             <h2>Sammen kan vi skabe fantastiske ting</h2>
             <p>Ved at være en del af vores kreative fællesskab og netværk vil du opdage en verden af
                 muligheder for at udtrykke dig selv og skabe noget fantastisk.</p>
@@ -79,6 +87,8 @@
                 <a href="#">Læs hvordan vi kan arbejde sammen</a>
         </section>
      </main>
+
+     <!-- FOOTER -->
 
      <footer>
         <nav>
